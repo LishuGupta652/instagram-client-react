@@ -1,15 +1,22 @@
+$blue: rgba(33, 33, 210, 0.3);
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
-  background-color: #f9f9f9;
+  background-color: #f5f5f5;
   color: #414141;
   font-family: "Poppins", sans-serif;
 }
 .container {
   margin: 0 auto;
+}
+a {
+  all: unset;
+  color: inherit;
+  cursor: pointer;
 }
 @media (max-width: 1400px) {
   .container {
@@ -35,7 +42,7 @@ body {
 /////////////////////////////// Header ///////////////////////////////////
 header {
   width: 95%;
-  background-color: rgba(33, 33, 210, 0.3);
+  background-color: rgba(33, 33, 210, 0.1);
   font-size: 1.2em;
   padding: 15px 0;
   border-radius: 10px;
@@ -46,27 +53,132 @@ header {
       .left {
         p {
           color: #313131;
+          cursor: pointer;
         }
       }
       .right {
         margin-left: auto;
         display: flex;
+        align-items: center;
 
         p {
           cursor: pointer;
           margin-right: 10px;
           font-size: 14px;
-          background-color: rgba(255, 255, 255, 1);
+          background-color: rgba(255, 255, 255, 0.8);
           color: rgba(33, 33, 210, 1);
           border-radius: 10px;
           padding: 3px 20px;
           box-sizing: border-box;
         }
         .login {
-          background-color: rgba(33, 33, 210, 0.3);
+          background-color: rgba(33, 33, 210, 0.2);
           color: #f5f5f5;
         }
+        .profile {
+          color: #212121;
+          font-size: 13px;
+        }
       }
+    }
+  }
+}
+
+////////////////////////////////// Form //////////////////////////////
+//// form ///
+.form {
+  .container {
+    .inner-form {
+      display: grid;
+      place-items: center;
+      text-align: left;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.02);
+      max-width: 500px;
+      padding: 100px 0;
+      margin: 50px auto;
+      background-color: white;
+      h2 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      section {
+        input {
+          display: block;
+          padding: 10px 10px;
+          border: none;
+          background-color: #f0f0f0;
+          font-family: "Poppins";
+          margin: 20px 0;
+          max-width: 300px;
+          width: 400px;
+        }
+      }
+      button {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 5px 50px;
+        border: none;
+        background-color: $blue;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 30px;
+      }
+      .log {
+        margin: 20px;
+        text-align: center;
+        color: blue;
+      }
+    }
+  }
+}
+
+////////////////////////// Profile Page /////////////////////////////////
+.profile {
+  .container {
+    .profile-inner {
+      .profile-header {
+        width: 100%;
+        background-color: white;
+        padding: 20px;
+      }
+      .profile-posts {
+        max-width: 600px;
+        margin: 20px auto;
+      }
+    }
+  }
+}
+
+////////////////////// POST ///////////////////////
+.post {
+  .card {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.02);
+    margin: 40px 0;
+    .post-header {
+      padding: 10px;
+      background-color: rgba(33, 33, 210, 0.09);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      font-size: 1.2rem;
+    }
+    .post-content {
+      width: 100%;
+      .post-image {
+        img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+        }
+      }
+    }
+    .post-footer {
+      font-size: 0.8rem;
+      padding: 10px;
     }
   }
 }
