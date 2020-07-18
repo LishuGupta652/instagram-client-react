@@ -107,13 +107,14 @@ header {
           display: block;
           padding: 10px 10px;
           border: none;
-          background-color: #f0f0f0;
           font-family: "Poppins";
           margin: 20px 0;
           max-width: 300px;
           width: 400px;
+          border-bottom: 1px solid grey;
         }
       }
+
       button {
         display: flex;
         justify-content: center;
@@ -139,13 +140,55 @@ header {
   .container {
     .profile-inner {
       .profile-header {
-        width: 100%;
-        background-color: white;
-        padding: 20px;
       }
       .profile-posts {
         max-width: 600px;
         margin: 20px auto;
+      }
+    }
+  }
+}
+
+/// Profile header
+.profile-header {
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(33, 33, 240, 0.06);
+  max-width: 700px;
+  padding: 20px;
+  display: grid;
+  place-items: center;
+  .ph-flex {
+    display: flex;
+    .ph-image {
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+      }
+    }
+  }
+  .ph-content {
+    margin-left: 70px;
+    h1 {
+    }
+    .ph-tabs {
+      display: flex;
+      p {
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        margin-right: 20px;
+        font-size: 12px;
+        span {
+          font-size: 8px;
+          background-color: rgba(233, 33, 40, 0.3);
+          border-radius: 100px;
+          padding: 5px;
+          width: 20px !important;
+          height: 20px !important;
+          color: green;
+        }
       }
     }
   }
