@@ -23,6 +23,9 @@ const Header = () => {
                 <Link to="/profile">
                   <p className="profile">Profile</p>
                 </Link>
+                <Link to="/createpost">
+                  <p className="profile">Create post</p>
+                </Link>
               </div>
             </div>
           </div>

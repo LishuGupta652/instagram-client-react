@@ -18,6 +18,26 @@ a {
   color: inherit;
   cursor: pointer;
 }
+input {
+  display: block;
+  padding: 10px 10px;
+  border: none;
+  font-family: "Poppins";
+  margin: 20px 0;
+  width: 100%;
+  border-bottom: 1px solid grey;
+}
+button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 5px 50px;
+  border: none;
+  background-color: $blue;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 30px;
+}
 @media (max-width: 1400px) {
   .container {
     max-width: 1200px;
@@ -66,7 +86,7 @@ header {
           margin-right: 10px;
           font-size: 14px;
           background-color: rgba(255, 255, 255, 0.8);
-          color: rgba(33, 33, 210, 1);
+          color: #212121;
           border-radius: 10px;
           padding: 3px 20px;
           box-sizing: border-box;
@@ -102,6 +122,14 @@ header {
         text-align: center;
         margin-bottom: 30px;
       }
+      .error {
+        color: red;
+        text-align: center;
+      }
+      .success {
+        color: green;
+        text-align: center;
+      }
       section {
         input {
           display: block;
@@ -111,7 +139,8 @@ header {
           margin: 20px 0;
           max-width: 300px;
           width: 400px;
-          border-bottom: 1px solid grey;
+          border: 1px solid grey;
+          border-radius: 5px;
         }
       }
 
@@ -222,6 +251,21 @@ header {
     .post-footer {
       font-size: 0.8rem;
       padding: 10px;
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+////////////////////////// Create Post /////////////////////////
+.createpost {
+  .container {
+    .createpost-inner {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
     }
   }
 }

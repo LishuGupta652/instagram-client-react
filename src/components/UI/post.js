@@ -14,10 +14,8 @@ const Post = ({ url }) => {
             </div>
           </div>
           <div className="post-footer">
-            <h3>
-              <label htmlFor="comment"></label>
-              <input type="text" id="comment" />
-            </h3>
+            <label htmlFor="comment">Comments</label>
+            <input type="text" id="comment" />
           </div>
         </div>
       </div>
