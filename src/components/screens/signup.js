@@ -12,6 +12,7 @@ const Signup = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
+  const [loading, setLoding] = useState(false);
 
   const postSignupData = (e) => {
     e.preventDefault();
@@ -28,7 +29,6 @@ const Signup = () => {
       }),
     })
       .then((res) => {
-        console.log(res);
         return res.json();
       })
       .then((data) => {
